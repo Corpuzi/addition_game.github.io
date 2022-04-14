@@ -5,14 +5,16 @@ const CORRECT = [
     "Congratulations on being the smartest person in the room!",
     "Wow! I'm impressed",
     "Sheeeeeeeeeeeeeeeesh",
-    "Much wow. Congrats!"
+    "Much wow. Congrats!",
+    "Correct!"
 ]
 const INCORRECT = [
     "That's false dumbass",
     "Nope. Try again",
     "Lmao that's not it",
     "Try again",
-    "Try again but this time use a calculator"
+    "Try again but this time use a calculator",
+    "Wrong!"
 ]
 
 function randomEquation() {
@@ -43,16 +45,16 @@ function randomEquation() {
     let equationAnswer = intOne + intTwo;
 
     //Prompt the user to answer the equation
-    let showEquation = prompt(`What's ${equation} ?`);
+    let addition = prompt(`What's ${equation} ?`);
     
     //Create a variable to store the success or fail message
     let result;
 
     //Verify if the input equals the correct answer and return the final result
-    if (showEquation == equationAnswer) {
+    if (addition == equationAnswer) {
         result = CORRECT[randomTrue];
-    } else if (showEquation == "") {
-        result = "Jeeez.. At least type in something";
+    } else if (addition == "") {
+        result = "Please type in something next time";
     } else {
         result = INCORRECT[randomFalse];
     }
@@ -60,3 +62,4 @@ function randomEquation() {
     //Display the result in index.html
     document.getElementById("result").innerText = result;
 }
+
