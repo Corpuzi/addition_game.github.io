@@ -3,12 +3,13 @@ body {
     text-align: center;
     background-image: url("https://wallpaperbat.com/img/433421-chalkboard-math-wallpaper-top-free-chalkboard-math-background.jpg");
     color:rgb(0, 0, 0);
-    font-size: large;
-    font-weight: 900;
+    font-size: x-large;
+    font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Black', Arial, sans-serif;
+    color: white;
 }
 
 button {
-    background-color: rgb(16, 54, 23);
+    background-color: white;
     font-weight: 800;
 }
