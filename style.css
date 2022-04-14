@@ -1,12 +1,14 @@
-* {
-    background-color: #bdbaba;
-}
-
 body {
     margin-top: 20%;
     text-align: center;
+    background-image: url("https://wallpaperbat.com/img/433421-chalkboard-math-wallpaper-top-free-chalkboard-math-background.jpg");
+    color:rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Black', Arial, sans-serif;
 }
 
 button {
-    background-color: grey;
+    background-color: rgb(16, 54, 23);
+    font-weight: 800;
 }
