@@ -47,15 +47,15 @@ function randomAddition() {
     let equationAnswer = intOne + intTwo;
 
     //Prompt the user to answer the equation
-    let addition = prompt(`What's ${equation} ?`);
+    let finalEquation = prompt(`What's ${equation} ?`);
     
     //Create a variable to store the success or fail message
     let result;
 
     //Verify if the input equals the correct answer and return the final result
-    if (addition == equationAnswer) {
+    if (finalEquation == equationAnswer) {
         result = CORRECT[randomTrue];
-    } else if (addition == "") {
+    } else if (finalEquation == "") {
         result = "Error: Please type in something next time";
     } else {
         result = INCORRECT[randomFalse];
@@ -94,15 +94,15 @@ function randomSubtraction() {
     let equationAnswer = intOne - intTwo;
 
     //Prompt the user to answer the equation
-    let addition = prompt(`What's ${equation} ?`);
+    let finalEquation = prompt(`What's ${equation} ?`);
     
     //Create a variable to store the success or fail message
     let result;
 
     //Verify if the input equals the correct answer and return the final result
-    if (addition == equationAnswer) {
+    if (finalEquation == equationAnswer) {
         result = CORRECT[randomTrue];
-    } else if (addition == "") {
+    } else if (finalEquation == "") {
         result = "Error: Please type in something next time";
     } else {
         result = INCORRECT[randomFalse];
@@ -141,15 +141,15 @@ function randomMultiplication() {
     let equationAnswer = intOne * intTwo;
 
     //Prompt the user to answer the equation
-    let addition = prompt(`What's ${equation} ?`);
+    let finalEquation = prompt(`What's ${equation} ?`);
     
     //Create a variable to store the success or fail message
     let result;
 
     //Verify if the input equals the correct answer and return the final result
-    if (addition == equationAnswer) {
+    if (finalEquation == equationAnswer) {
         result = CORRECT[randomTrue];
-    } else if (addition == "") {
+    } else if (finalEquation == "") {
         result = "Error: Please type in something next time";
     } else {
         result = INCORRECT[randomFalse];
@@ -165,14 +165,13 @@ function randomDivision() {
     let randomNumberOne = Math.floor(Math.random() * (NUMBERS.length));
     let randomNumberTwo = Math.floor(Math.random() * (NUMBERS.length));
     let randomNumberThree = Math.floor(Math.random() * (NUMBERS.length));
-    let randomNumberFour = Math.floor(Math.random() * (NUMBERS.length));
     
     //Generate random numbers for success and fail messages
     let randomTrue = Math.floor(Math.random() * (CORRECT.length));
     let randomFalse = Math.floor(Math.random() * (INCORRECT.length));
 
     //Generate & display a random addition equation as a string
-    let equation = `${NUMBERS[randomNumberOne]}${NUMBERS[randomNumberTwo]} / ${NUMBERS[randomNumberThree]}${NUMBERS[randomNumberFour]}`; 
+    let equation = `${NUMBERS[randomNumberOne]}${NUMBERS[randomNumberTwo]} / ${NUMBERS[randomNumberThree]}`; 
     
     //Store the first random generated number of the equation inside a variable
     let numberOne = `${NUMBERS[randomNumberOne]}${NUMBERS[randomNumberTwo]}`;
@@ -188,15 +187,15 @@ function randomDivision() {
     let equationAnswer = intOne / intTwo;
 
     //Prompt the user to answer the equation
-    let addition = prompt(`What's ${equation} ?`);
+    let finalEquation = prompt(`What's ${equation} ?`);
     
     //Create a variable to store the success or fail message
     let result;
 
     //Verify if the input equals the correct answer and return the final result
-    if (addition == equationAnswer) {
+    if (finalEquation == equationAnswer) {
         result = CORRECT[randomTrue];
-    } else if (addition == "") {
+    } else if (finalEquation == "") {
         result = "Error: Please type in something next time";
     } else {
         result = INCORRECT[randomFalse];
