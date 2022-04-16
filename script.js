@@ -178,7 +178,7 @@ function randomDivision() {
     let numberOne = `${NUMBERS[randomNumberOne]}${NUMBERS[randomNumberTwo]}`;
     
     //Store the second random generated number of the equation inside a variable
-    let numberTwo = `${NUMBERS[randomNumberThree]}${NUMBERS[randomNumberFour]}`;
+    let numberTwo = NUMBERS[randomNumberThree];
 
     //Convert the random generated numbers from strings to integers
     let intOne = parseInt(numberOne);
