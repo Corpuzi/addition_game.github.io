@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="generateAddition" onclick="randomEquation()">Generate Equation</button>
+    <h1 id="Guide">
+        Press on one of the labeled buttons below to generate a random equation
+    </h1>
+    <button id="generateAddition" onclick="randomAddition()">Addition</button>
+    <button id="generateSubtraction" onclick="randomSubtraction()">Subtraction</button>
+    <button id="generateMultiplication" onclick="randomMultiplication()">Multiplication</button>
+    <button id="generateDivision" onclick="randomDivision()">Division</button>
 
-    <h5 id="result">
+
+    <h3 id="result">
         <!-- Display result -->
-    </h5>
-
+    </h3>
     
 <script src="script.js"></script>
 </body>
